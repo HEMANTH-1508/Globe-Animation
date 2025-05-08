@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Globe_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-Vv-sJ8">
+                                <rect key="frame" x="100" y="20.666666666666686" width="656" height="861"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwp-1j-rK8">
+                                <rect key="frame" x="15" y="146" width="76" height="610"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-za-TbB">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.30184417517006801" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ffe-za-TbB" firstAttribute="width" secondItem="Gwp-1j-rK8" secondAttribute="width" id="7kj-7R-VNr"/>
+                                    <constraint firstItem="ffe-za-TbB" firstAttribute="top" secondItem="Gwp-1j-rK8" secondAttribute="top" id="PYy-10-rhA"/>
+                                    <constraint firstItem="ffe-za-TbB" firstAttribute="centerX" secondItem="Gwp-1j-rK8" secondAttribute="centerX" id="mz9-lY-OrB"/>
+                                    <constraint firstItem="ffe-za-TbB" firstAttribute="height" secondItem="Gwp-1j-rK8" secondAttribute="height" multiplier="0.12459" id="tGs-YR-iYH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.20753245288916997" green="0.20852591143440957" blue="0.20759631753967267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="sGJ-Vv-sJ8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="W0Z-Dz-uLn"/>
+                            <constraint firstItem="sGJ-Vv-sJ8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1.01056" id="WXX-8J-DaT"/>
+                            <constraint firstItem="sGJ-Vv-sJ8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.66921" id="ado-0n-Wq9"/>
+                            <constraint firstItem="Gwp-1j-rK8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gRF-ty-MLJ"/>
+                            <constraint firstItem="Gwp-1j-rK8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.193384" id="rYT-93-nhd"/>
+                            <constraint firstItem="Gwp-1j-rK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="t5J-KW-QX3"/>
+                            <constraint firstItem="Gwp-1j-rK8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.715962" id="tc0-UN-aQb"/>
+                            <constraint firstItem="sGJ-Vv-sJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="wZ7-Bo-YtK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Globe" destination="sGJ-Vv-sJ8" id="cvl-rI-uKS"/>
+                        <outlet property="ScrollBar" destination="Gwp-1j-rK8" id="4CR-Tn-liL"/>
+                        <outlet property="StarBTN" destination="ffe-za-TbB" id="Sek-gi-nvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.48091603053435" y="6.3380281690140849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" width="4096" height="3184"/>
+        <image name="star" width="5152" height="4779"/>
+    </resources>
+</document>
